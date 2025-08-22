@@ -41,7 +41,7 @@ def send_weather_by_location(update: Update, context: CallbackContext):
             humidity = data['current']['humidity']
 
             text = (
-                f"📍 Sizning joylashuvingiz bo‘yicha ob-havo:\n"
+                f"📍 Sizning joylashuvingiz bo'yicha ob-havo:\n"
                 f"🌡 Harorat: {temp}°C\n"
                 f"🤔 His qilinadi: {feels_like}°C\n"
                 f"☁ Holat: {condition}\n"
