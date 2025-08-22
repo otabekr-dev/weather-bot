@@ -13,6 +13,8 @@ def main() -> None:
 
     dispatcher.add_handler(CommandHandler('start', handlers.start))
 
+    dispatcher.add_handler(MessageHandler(Filters.location, handlers.send_weather_by_location))
+
 
     updater.start_polling()
     updater.idle()
